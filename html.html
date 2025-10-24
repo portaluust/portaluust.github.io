@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студенческий портал</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    УФИМСКИЙ УНИВЕРСИТЕТ <span> НАУКИ И ТЕХНОЛОГИЙ</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#main">Главная</a></li>
+                        <li><a href="#teachers">Преподаватели</a></li>
+                        <li><a href="#grades">Оценки</a></li>
+                        <li><a href="#materials">Материалы</a></li>
+                    </ul>
+                </nav>
+                <div class="user-actions">
+                    <button class="login-btn">Вход</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главная страница -->
+    <section id="main">
+        <!-- Герой-секция -->
+        <div class="hero">
+            <div class="container">
+                <h1>ЛИЧНЫЙ КАБИНЕТ СТУДЕНТА</h1>
+                <p>Все необходимые инструменты для успешной учебы в одном месте. Расписание, материалы, оценки и многое другое.</p>
+                <button class="cta-button">Узнать больше</button>
+            </div>
+        </div>
+
+        <!-- Форма входа -->
+        <div class="auth-section">
+            <div class="auth-container">
+                <h2 class="auth-title">ВХОД</h2>
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" placeholder="Введите пароль">
+                    </div>
+                    <button type="submit" class="auth-button">Войти</button>
+                    <div class="auth-switch">
+                        Нет аккаунта? <a href="#">Зарегистрироваться</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Секция с функциями -->
+        <div class="container">
+            <h2 class="section-title">Основные возможности</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Расписание занятий</h3>
+                    <p>Просматривайте расписание на неделю или месяц. Получайте уведомления об изменениях.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>Контакты преподавателей</h3>
+                    <p>Найдите контактные данные любого преподавателя. Электронная почта, номер телефона.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Лекции и материалы</h3>
+                    <p>Доступ к конспектам лекций, презентациям и дополнительным учебным материалам.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>Обмен материалами</h3>
+                    <p>Загружайте и делитесь учебными материалами с однокурсниками.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+<h3>Личный кабинет</h3>
+                    <p>Просматривайте свои оценки, комментарии преподавателей и рекомендации для улучшения результатов.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>Резюме</h3>
+                    <p>Загружайте и обновляйте свое резюме для будущих карьерных возможностей.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Навигация на другие страницы -->
+        <div class="page-navigation">
+            <a href="#teachers" class="page-link">Контакты преподавателей</a>
+            <a href="#grades" class="page-link">Оценки</a>
+            <a href="#materials" class="page-link">Материалы лекций</a>
+        </div>
+    </section>
+
+    <!-- Страница контактов преподавателей -->
+    <section id="teachers" style="display: none;">
+        <div class="hero">
+            <div class="container">
+                <h1>КОНТАКТЫ ПРЕПОДАВАТЕЛЕЙ</h1>
+                <p>Телефоны или электронный адрес вашего преподавателя.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="teachers-list">
+                <div class="teacher-card">
+                    <h3>Кужаев Арсен Фанилевич</h3>
+                    <div class="teacher-info">Кандидат физико-математических наук</div>
+                    <div class="teacher-phone">+7 (347) 229-96-65, +7 (908) 350-21-73</div>
+                </div>
+                <div class="teacher-card">
+                    <h3>Белова Анна Сергеевна</h3>
+                    <div class="teacher-info">Кандидат физико-математических наук</div>
+                    <div class="teacher-phone"> +7 (347) 229-96-65</div>
+                </div>
+                <div class="teacher-card">
+                    <h3>Сметанина Ольга Николаевна</h3>
+                    <div class="teacher-info">Доктор технических наук</div>
+                    <div class="teacher-phone">smetanina.on@ugatu.su</div>
+                </div>
+                <div class="teacher-card">
+                    <h3>Хасанов Айрат Юлаевич</h3>
+                    <div class="teacher-info">Кандидат технических наук</div>
+                    <div class="teacher-phone">HasanovAY@uust.ru</div>
+                </div>
+                <div class="teacher-card">
+                    <h3>Шерыхалина Наталия Михайловна</h3>
+                    <div class="teacher-info">Доктор технических наук</div>
+                    <div class="teacher-phone">sheryhalina.nm@ugatu.su</div>
+                </div>
+                <div class="teacher-card">
+                    <h3>Костюкова Анастасия Петровна</h3>
+                    <div class="teacher-info">Кандидат технических наук</div>
+                    <div class="teacher-phone">kostyukova.ap@ugatu.su</div>
+                </div>
+            </div>
+            
+            <!-- Навигация на другие страницы -->
+            <div class="page-navigation">
+                <a href="#main" class="page-link">Главная страница</a>
+                <a href="#grades" class="page-link">Таблица оценок</a>
+                <a href="#materials" class="page-link">Материалы лекций</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Страница с таблицей оценок -->
+    <section id="grades" style="display: none;">
+        <div class="hero">
+            <div class="container">
+                <h1>ТАБЛИЦА ОЦЕНОК</h1>
+                <p>Текущие оценки по всем предметам за текущий семестр.</p>
+            </div>
+        </div>
+<div class="container">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Предмет</th>
+                            <th>Преподаватель</th>
+                            <th>Оценки</th>
+                            <th>Средний балл</th>
+                            <th>Итоговая оценка</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Математический анализ</td>
+                            <td>Кужаев А.Ф.</td>
+                            
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td>Дискретная математика и математическая логика</td>
+                            <td>Шерыхалина Н.М</td>
+                            
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td>Языки и методы программирования</td>
+                            <td>Хасанов Айрат Юлаевич</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Алгебра и геометрия</td>
+                            <td>Белова А.С.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Программно-аппаратные комплексы</td>
+                            <td>Костюкова А.П.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Основы информационных технологий</td>
+                            <td>Сметанина О.Н.</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Навигация на другие страницы -->
+            <div class="page-navigation">
+                <a href="#main" class="page-link">Главная страница</a>
+                <a href="#teachers" class="page-link">Контакты преподавателей</a>
+                <a href="#materials" class="page-link">Материалы лекций</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Страница с материалами лекций -->
+    <section id="materials" style="display: none;">
+        <div class="hero">
+            <div class="container">
+                <h1>МАТЕРИАЛЫ ЛЕКЦИЙ</h1>
+                <p>Конспекты лекций, презентации и дополнительные материалы для самостоятельного изучения.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-icon">📘</div>
+                    <h3>Математический анализ</h3>
+                    <div class="material-info">Лекции 1-10</div>
+                    <div class="material-info">Обновлено: 15.10.2025</div>
+                    <button class="download-btn">Скачать</button>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">📚</div>
+                    <h3>Алгебра и геометрия</h3>
+                    <div class="material-info">Лекции 1-8</div>
+                    <div class="material-info">Обновлено: 12.10.2025</div>
+                    <button class="download-btn">Скачать</button>
+                </div>
+<div class="material-card">
+                    <div class="material-icon">💻</div>
+                    <h3>Основы информационных технологий</h3>
+                    <div class="material-info">Лекции 1-12</div>
+                    <div class="material-info">Обновлено: 18.10.2025</div>
+                    <button class="download-btn">Скачать</button>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">⌨</div>
+                    <h3>Языки и методы программирования</h3>
+                    <div class="material-info">Лекции 1-6</div>
+                    <div class="material-info">Обновлено: 10.10.2025</div>
+                    <button class="download-btn">Скачать</button>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">📄</div>
+                    <h3>Дискретная математика и матемаическая логика</h3>
+                    <div class="material-info">Лекции 1-7</div>
+                    <div class="material-info">Обновлено: 14.10.2025</div>
+                    <button class="download-btn">Скачать</button>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">🛠</div>
+                    <h3>Программно-аппаратные комплексы</h3>
+                    <div class="material-info">Лекции 1-5</div>
+                    <div class="material-info">Обновлено: 09.10.2025</div>
+                    <button class="download-btn">Скачать</button>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">📗</div>
+                    <h3>Основы речевой культуры</h3>
+                    <div class="material-info">Лекции 1-4</div>
+                    <div class="material-info">Обновлено: 11.10.2025</div>
+                    <button class="download-btn">Скачать</button>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">📒</div>
+                    <h3>Английский язык</h3>
+                    <div class="material-info">Лекции 1-9</div>
+                    <div class="material-info">Обновлено: 16.10.2023</div>
+                    <button class="download-btn">Скачать</button>
+                </div>
+            </div>
+            
+            <!-- Навигация на другие страницы -->
+            <div class="page-navigation">
+                <a href="#main" class="page-link">Главная страница</a>
+                <a href="#teachers" class="page-link">Контакты преподавателей</a>
+                <a href="#grades" class="page-link">Таблица оценок</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>О портале</h3>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Ресурсы</h3>
+                    <ul>
+                        <li><a href="#">Библиотека</a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">Форум</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Поддержка</h3>
+                    <ul>
+                        <li><a href="#">Техническая поддержка</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; УФИМСКИЙУНИВЕРСИТЕТНАУКИИТЕХНОЛОГИЙ.Все права защищены. 2025г
+            </div>
+        </div>
+    </footer>
+<script>
+        // Функция для переключения между страницами
+        function showPage(pageId) {
+            // Скрыть все страницы
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Показать выбранную страницу
+            document.getElementById(pageId).style.display = 'block';
+            
+            // Прокрутить к началу страницы
+            window.scrollTo(0, 0);
+        }
+        
+        // Обработчики для навигации в шапке
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pageId = this.getAttribute('href').substring(1);
+                showPage(pageId);
+            });
+        });
+        
+        // Обработчики для навигации между страницами
+        document.querySelectorAll('.page-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pageId = this.getAttribute('href').substring(1);
+                showPage(pageId);
+            });
+        });
+        
+        // Показать главную страницу при загрузке
+        document.addEventListener('DOMContentLoaded', function() {
+            showPage('main');
+        });
+    </script>
+</body>
+</html>
